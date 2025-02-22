@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar ONGs - Plataforma de Conexão ONGs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">ONGs Connect</a>
+            <ul class="nav-links">
+                <li><a href="/">Cadastro</a></li>
+                <li><a href="/busca-ongs.html" class="active">Buscar ONGs</a></li>
+                <li><a href="/doacao.html">Fazer Doação</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Encontre uma ONG para apoiar</h1>
+        
+        <!-- Seção de Filtros -->
+        <section class="search-filters">
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="category">Categoria</label>
+                    <select id="category" name="category">
+                        <option value="">Todas as categorias</option>
+                        <option value="educacao">Educação</option>
+                        <option value="saude">Saúde</option>
+                        <option value="meio-ambiente">Meio Ambiente</option>
+                        <option value="direitos-humanos">Direitos Humanos</option>
+                        <option value="animais">Proteção Animal</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="location">Localização</label>
+                    <select id="location" name="location">
+                        <option value="">Todas as localizações</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="ba">Bahia</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="impact">Tipo de Impacto</label>
+                    <select id="impact" name="impact">
+                        <option value="">Todos os tipos</option>
+                        <option value="local">Local</option>
+                        <option value="regional">Regional</option>
+                        <option value="nacional">Nacional</option>
+                        <option value="internacional">Internacional</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="cause">Causa Social</label>
+                    <select id="cause" name="cause">
+                        <option value="">Todas as causas</option>
+                        <option value="pobreza">Combate à Pobreza</option>
+                        <option value="educacao">Educação Infantil</option>
+                        <option value="idosos">Apoio aos Idosos</option>
+                        <option value="cultura">Cultura e Arte</option>
+                        <option value="esporte">Esporte e Lazer</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" class="submit-button">Aplicar Filtros</button>
+        </section>
+
+        <!-- Lista de ONGs -->
+        <div class="ongs-grid">
+            <!-- ONG 1 -->
+            <div class="ong-card">
+                <img src="/ONGs.png" alt="Lista de ONGs" class="ong-image">
+
+                <div class="ong-info">
+                    <span class="ong-category">Educação</span>
+                    <h2 class="ong-title">Educação para Todos</h2>
+                    <p class="ong-description">Promovendo educação de qualidade para crianças em comunidades carentes através de aulas de reforço e atividades extracurriculares.</p>
+                    <div class="ong-location">
+                        <span>📍 São Paulo, SP</span>
+                    </div>
+                    <a href="/doacao.html" class="ong-button">Apoiar esta ONG</a>
+                </div>
+            </div>
+
+            <!-- ONG 2 -->
+            <div class="ong-card">
+                <img src="/ONGs.png" alt="Lista de ONGs" class="ong-image">
+                <div class="ong-info">
+                    <span class="ong-category">Meio Ambiente</span>
+                    <h2 class="ong-title">Verde Vida</h2>
+                    <p class="ong-description">Trabalhando na preservação de áreas verdes urbanas e educação ambiental para comunidades locais.</p>
+                    <div class="ong-location">
+                        <span>📍 Rio de Janeiro, RJ</span>
+                    </div>
+                    <a href="/doacao.html" class="ong-button">Apoiar esta ONG</a>
+                </div>
+            </div>
+
+            <!-- ONG 3 -->
+            <div class="ong-card">
+                <img src="/ONGs.png" alt="Lista de ONGs" class="ong-image">
+                <div class="ong-info">
+                    <span class="ong-category">Proteção Animal</span>
+                    <h2 class="ong-title">Amigos dos Animais</h2>
+                    <p class="ong-description">Resgatando e cuidando de animais abandonados, promovendo adoção responsável e conscientização sobre bem-estar animal.</p>
+                    <div class="ong-location">
+                        <span>📍 Belo Horizonte, MG</span>
+                    </div>
+                    <a href="/doacao.html" class="ong-button">Apoiar esta ONG</a>
+                </div>
+            </div>
+
+            <!-- ONG 4 -->
+            <div class="ong-card">
+                <img src="/ONGs.png" alt="Lista de ONGs" class="ong-image">
+                <div class="ong-info">
+                    <span class="ong-category">Saúde</span>
+                    <h2 class="ong-title">Saúde para Todos</h2>
+                    <p class="ong-description">Levando atendimento médico e odontológico gratuito para comunidades carentes em todo o Brasil.</p>
+                    <div class="ong-location">
+                        <span>📍 Porto Alegre, RS</span>
+                    </div>
+                    <a href="/doacao.html" class="ong-button">Apoiar esta ONG</a>
+                </div>
+            </div>
+
+            <!-- ONG 5 -->
+            <div class="ong-card">
+                <img src="/ONGs.png" alt="Lista de ONGs" class="ong-image">
+
+                <div class="ong-info">
+                    <span class="ong-category">Direitos Humanos</span>
+                    <h2 class="ong-title">Idade com Dignidade</h2>
+                    <p class="ong-description">Proporcionando cuidado, atenção e atividades recreativas para idosos em situação de vulnerabilidade.</p>
+                    <div class="ong-location">
+                        <span>📍 Salvador, BA</span>
+                    </div>
+                    <a href="/doacao.html" class="ong-button">Apoiar esta ONG</a>
+                </div>
+            </div>
+
+            <!-- ONG 6 -->
+            <div class="ong-card">
+                <img src="/ONGs.png" alt="Lista de ONGs" class="ong-image">
+
+                <div class="ong-info">
+                    <span class="ong-category">Cultura e Arte</span>
+                    <h2 class="ong-title">Arte e Cultura</h2>
+                    <p class="ong-description">Promovendo acesso à cultura e arte através de oficinas gratuitas de música, dança e teatro para jovens.</p>
+                    <div class="ong-location">
+                        <span>📍 Recife, PE</span>
+                    </div>
+                    <a href="/doacao.html" class="ong-button">Apoiar esta ONG</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

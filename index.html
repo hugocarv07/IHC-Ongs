@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Conexão ONGs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">ONGs Connect</a>
+            <ul class="nav-links">
+                <li><a href="/" class="active">Cadastro</a></li>
+                <li><a href="/busca-ongs.html">Buscar ONGs</a></li>
+                <li><a href="/doacao.html">Fazer Doação</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main class="registration-form">
+            <h1>Crie sua conta</h1>
+            <form id="userForm" onsubmit="return validateForm(event)">
+                <div class="form-group">
+                    <label for="fullName">Nome completo*</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="login">Login*</label>
+                    <input type="text" id="login" name="login" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Senha*</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirmar senha*</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthDate">Data de nascimento*</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cpf">CPF*</label>
+                        <input type="text" id="cpf" name="cpf" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rg">RG*</label>
+                        <input type="text" id="rg" name="rg" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Endereço*</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Li e aceito os <button type="button" onclick="showTerms()" class="terms-button">Termos de Uso</button></label>
+                </div>
+
+                <button type="submit" class="submit-button">Cadastrar</button>
+            </form>
+        </main>
+    </div>
+
+    <!-- Modal dos Termos de Uso -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <h2>Termos de Uso</h2>
+            <div class="terms-content">
+                <p>Termos e condições para uso da plataforma de conexão entre ONGs e doadores...</p>
+                <!-- Adicione mais conteúdo dos termos aqui -->
+            </div>
+            <div class="modal-buttons">
+                <button onclick="closeTerms()" class="secondary-button">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
